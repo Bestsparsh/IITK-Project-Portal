@@ -1,0 +1,29 @@
+<%- include ('partials/header') %>
+ <div>
+    <div class="row">
+        <div class="col s6">
+            <img src="../public/images/iitk_logo.png">
+        </div>
+        <div class="col s6">
+            <div class="text-box">
+                <h1>IITK PROJECT PORTAL</h1>
+                <p>Opportunities don't happen, you create them</p>
+                <div class="button-box">
+                    <% if(!user){ %>
+                        <a class="waves-effect waves-dark btn-flat" href="/projects">Skip For Now</a>
+                     <%}else{%>
+                    <a class="waves-effect waves-dark btn-flat" href="/projects">Go To Portal</a>
+                     <%}%>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+    <div class="row Copyright">
+        <p>Copyright&#169; 2021 Sparsh Chitransh</p>
+    </div>
+</div>  
+
+
+<%- include ('partials/footer') %> 
